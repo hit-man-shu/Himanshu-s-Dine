@@ -11,8 +11,6 @@ const Meals = () => {
     error,
   } = useHttp("https://hitmanshus-dine.onrender.com/meals", requestConfig, []);
 
-  console.log(loadedMeals);
-
   if (isLoading) {
     return <p className="center">Fetching meals...</p>;
   }
