@@ -9,7 +9,7 @@ const Meals = () => {
     data: loadedMeals,
     isLoading,
     error,
-  } = useHttp("http://localhost:3000/meals", requestConfig, []);
+  } = useHttp("https://hitmanshus-dine.onrender.com/meals", requestConfig, []);
 
   console.log(loadedMeals);
 

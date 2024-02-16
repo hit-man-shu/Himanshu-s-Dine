@@ -13,7 +13,10 @@ const MealItem = ({ meal }) => {
   return (
     <li className="meal-item">
       <article>
-        <img src={`http://localhost:3000/${meal.image}`} alt={meal.name} />
+        <img
+          src={`https://hitmanshus-dine.onrender.com/${meal.image}`}
+          alt={meal.name}
+        />
         <div>
           <h2>{meal.name}</h2>
           <p className="meal-item-price">

@@ -25,7 +25,7 @@ const Checkout = () => {
     error,
     sendRequest,
     clearData,
-  } = useHttp("http://localhost:3000/orders", requestConfig);
+  } = useHttp("https://hitmanshus-dine.onrender.com/orders", requestConfig);
 
   const cartTotal = items.reduce((totalPrice, item) => {
     return totalPrice + item.quantity * item.price;
